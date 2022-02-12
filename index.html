@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+        <div style="
+            bottom:0;
+            left: 0;
+            width:100%;
+            height:30px;
+                background-color: black;">
+            <div style="width: 50%; float: left;"><a href="https://yellowsink.pl/" style="width: 50%; color: white;">Yellowsink.pl</a></div>
+            <div style="width: 50%; float: left; text-align: right;"><a href="https://yellowsink.pl/privacypolicy.html" style="color: white;">PrivacyPolicy</a></div>
+        </div>
+        <div id="topBar">
+            <button onclick="poziom(1)" id="poz1">Beginner</button>
+            <button onclick="poziom(2)" id="poz2">Advanced</button>
+            <button onclick="poziom(3)" id="poz3">Expert</button><br>
+
+            <input type="number" placeholder="Game height" id="wysPl">
+            <input type="number" placeholder="Game width" id="szerPl">
+            <input type="number" placeholder="Bombs" id="ilBom"><br>
+            <button onclick="prepare()" id="play">Play!</button><br>
+            <button onclick="clean()" id="wycz">Again!</button><br>
+        </div>
+        <div id="gameDiv">
+            <center>
+                <div id="wTemp">
+                    <table id="topTable">
+                        <tr><td>Score:</td><td rowspan="2" id="emoji">😄</td><td>Bombs left:</td></tr>
+                        <tr><td id="liczWynik">0</td><td id="liczBomby">0</td></tr>
+                    </table>
+                    <div id="planszadiv">
+                    <table border="1px" id="plansza">
+                    </table>
+                    </div>
+                </div>
+            </center>
+        </div>
+        
+    </body>
+</html>
