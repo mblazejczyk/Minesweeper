@@ -6,7 +6,7 @@ There is also basic score system and bomb counts (marking bombs feature is also 
 
 ## Preview
 Languages:
-* [English](https://blazejczyk.net/minesweeper/
+* [English](https://blazejczyk.net/minesweeper/)
 
 ## Install
 
